@@ -1,2 +1,0 @@
-# Q-docs
-documentation regarding
