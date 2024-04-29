@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <link rel="icon" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-		<link rel="modulepreload" href="./_app/immutable/entry/start.9ed84059.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.6dba6488.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e4115fe6.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.7083ab97.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.6e67e459.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.5ee4accc.js">
+    <meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="./_app/immutable/start-28718efc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-4ae51809.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-7a65a84f.js">
+		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-7b00ae37.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-26bf47ad.js">
   </head>
   <body>
     <div>
@@ -21,31 +22,22 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 
-			
-			<script>
-				{
-					__sveltekit_hvs65u = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
+		<script type="module" data-sveltekit-hydrate="1lpq1a5">
+			import { start } from "./_app/immutable/start-28718efc.js";
 
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.9ed84059.js"),
-						import("./_app/immutable/entry/app.7083ab97.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
+			start({
+				env: {},
+				paths: {"assets":"","base":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1lpq1a5"]').parentNode,
+				version: "1714400140634",
+				hydrate: {
+					node_ids: [0, 2],
+					data: [null,null],
+					form: null,
+					error: null
 				}
-			</script>
-		</div>
+			});
+		</script>
+	</div>
   </body>
 </html>
